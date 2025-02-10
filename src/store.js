@@ -1,9 +1,10 @@
-// src/store.js
-import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './reducers';
+import { configureStore } from "@reduxjs/toolkit";
+import swapiReducer from "./swapiSlice";
 
-const store = configureStore({
-    reducer: rootReducer,
+export const store = configureStore({
+  reducer: {
+    swapi: swapiReducer,
+  },
 });
 
 export default store;

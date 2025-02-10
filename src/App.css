@@ -1,37 +1,67 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
 }
 
-.query-input {
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.fetch-button, .clear-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.result {
+.search-box {
   display: flex;
   justify-content: center;
-  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.character-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 20px;
 }
 
-.data-window {
-  background-color: #f0f0f0;
-  padding: 20px;
-  width: 400px;
-  height: 200px;
+.character-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow-y: auto; 
+}
+
+.character-card.empty {
+  color: #888;
+  font-style: italic;
+  border: 1px dashed #ccc;
+  background: #f0f0f0;
 }
 
 footer {
